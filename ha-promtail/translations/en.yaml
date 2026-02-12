@@ -1,0 +1,24 @@
+name: HA Promtail
+options:
+  client:
+    name: Loki Client
+    description: Loki endpoint and authentication
+  client.url:
+    name: Loki URL
+  client.username:
+    name: Username
+  client.password:
+    name: Password
+  client.cafile:
+    name: CA file
+    description: Path to CA certificate file (inside add-on)
+  client.certfile:
+    name: Client certificate
+    description: Path to client certificate file
+  client.keyfile:
+    name: Client key
+    description: Path to client key file
+  client.servername:
+    name: TLS server name
+  log_level:
+    name: Log level
