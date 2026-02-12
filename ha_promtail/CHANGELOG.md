@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8
+- **FIX**: Reduce journal max_age from 12h to 1h
+- Prevents "entry too far behind" errors when Loki rejects old logs
+- Promtail now only reads journal entries from the last hour on startup
+
 ## 0.1.7
 - **CRITICAL FIX**: Remove s6-overlay dependency from Dockerfile
 - Rewrite entrypoint to run directly with bash instead of s6-overlay

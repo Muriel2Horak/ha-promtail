@@ -70,7 +70,7 @@ cat >> "$CONFIG_PATH" <<EOFCONF
 scrape_configs:
   - job_name: haos-journal
     journal:
-      max_age: 12h
+      max_age: 1h
       json: false
       labels:
         job: systemd-journal
