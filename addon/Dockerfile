@@ -1,4 +1,4 @@
-ARG BUILD_FROM=grafana/promtail:latest
+ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 RUN apt-get update \
@@ -6,5 +6,3 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY rootfs /
-
-ENTRYPOINT ["/usr/bin/with-contenv", "/usr/bin/promtail-entry"]

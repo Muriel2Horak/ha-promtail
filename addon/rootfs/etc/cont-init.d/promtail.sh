@@ -74,5 +74,4 @@ scrape_configs:
         target_label: container_name
 EOFCONF
 
-# Expose log level for run script
 export PROMTAIL_LOG_LEVEL="$log_level"

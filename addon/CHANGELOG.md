@@ -1,4 +1,8 @@
 # Changelog
 
+## 0.1.5
+- Align addon layout to /addon/config.json
+- Use BUILD_FROM and run.sh
+
 ## 0.1.4
-- Move add-on to /addon with config.json for Supervisor discovery
+- Initial /addon layout
