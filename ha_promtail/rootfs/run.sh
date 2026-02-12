@@ -89,6 +89,36 @@ EOFCONF
 echo "[INFO] Promtail configuration generated successfully"
 echo "[INFO] Loki URL: $url"
 echo "[INFO] Log level: $log_level"
+
+# Debug: show generated config
+echo "[DEBUG] === Generated Promtail config ==="
+cat "$CONFIG_PATH"
+echo "[DEBUG] === End config ==="
+
+# Debug: check journal path
+echo "[DEBUG] === Checking /var/log/journal ==="
+ls -la /var/log/journal/ 2>&1 || echo "[DEBUG] /var/log/journal does NOT exist"
+echo "[DEBUG] === Checking /run/log/journal ==="
+ls -la /run/log/journal/ 2>&1 || echo "[DEBUG] /run/log/journal does NOT exist"
+
+# Debug: check if journald is accessible
+echo "[DEBUG] === Checking journalctl ==="
+which journalctl 2>&1 || echo "[DEBUG] journalctl not found"
+journalctl --no-pager -n 3 2>&1 || echo "[DEBUG] journalctl cannot read logs"
+
+# Debug: check promtail binary
+echo "[DEBUG] === Promtail binary ==="
+ls -la /usr/bin/promtail 2>&1
+/usr/bin/promtail --version 2>&1 || true
+
+# Debug: check options.json
+echo "[DEBUG] === options.json ==="
+cat "$OPTIONS_PATH"
+
+# Debug: connectivity to Loki
+echo "[DEBUG] === Testing Loki connectivity ==="
+curl -s -o /dev/null -w "HTTP Status: %{http_code}" "$url" 2>&1 || echo "[DEBUG] Cannot reach Loki at $url"
+
 echo "[INFO] Starting Promtail..."
 
 # Start Promtail

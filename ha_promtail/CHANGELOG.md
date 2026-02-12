@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.9
+- Add debug diagnostics on startup (config, journal path, Loki connectivity)
+
 ## 0.1.8
 - **FIX**: Reduce journal max_age from 12h to 1h
 - Prevents "entry too far behind" errors when Loki rejects old logs
