@@ -2,7 +2,7 @@ name: HA Promtail
 slug: ha_promtail
 description: Promtail for HAOS with journald scraping
 url: https://github.com/Muriel2Horak/ha-promtail
-version: 0.1.2
+version: 0.1.3
 arch:
   - amd64
   - aarch64
@@ -52,3 +52,4 @@ ports:
 ports_description:
   9080/tcp: Promtail web server
 watchdog: http://[HOST]:[PORT:9080]/ready
+stage: stable

@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.3
+- Mark add-on as stable
+
 ## 0.1.2
 - Force repository refresh
 
