@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.7
+- **CRITICAL FIX**: Remove s6-overlay dependency from Dockerfile
+- Rewrite entrypoint to run directly with bash instead of s6-overlay
+- Fix "exec: /usr/bin/with-contenv: no such file or directory" error
+- Combine all initialization and execution into single /run.sh script
+
 ## 0.1.6
 - **CRITICAL FIX**: Remove invalid 'SYSLOG' and 'SYS_CHROOT' from privileged capabilities
 - These are not valid Linux capabilities in Home Assistant
