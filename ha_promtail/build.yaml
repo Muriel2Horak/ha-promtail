@@ -1,0 +1,5 @@
+build_from:
+  amd64: "grafana/promtail:3.3.2"
+  aarch64: "grafana/promtail:3.3.2"
+  armv7: "grafana/promtail:3.3.2"
+  armhf: "grafana/promtail:3.3.2"

@@ -1,8 +1,0 @@
-{
-  "build_from": {
-    "amd64": "grafana/promtail:latest",
-    "aarch64": "grafana/promtail:latest",
-    "armv7": "grafana/promtail:latest",
-    "armhf": "grafana/promtail:latest"
-  }
-}

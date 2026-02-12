@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.5
+- Fix repository structure for HA marketplace visibility
+- Convert build configuration to YAML format
+- Pin Promtail to version 3.3.2 (instead of 'latest')
+- Add icon and logo for better marketplace presentation
+- Consolidate addon structure to meet HA requirements
+
 ## 0.1.3
 - Mark add-on as stable
 
