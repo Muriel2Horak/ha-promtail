@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.6
+- **CRITICAL FIX**: Remove invalid 'SYSLOG' and 'SYS_CHROOT' from privileged capabilities
+- These are not valid Linux capabilities in Home Assistant
+- Addon should now load correctly in Supervisor
+
 ## 0.1.5
 - Fix repository structure for HA marketplace visibility
 - Convert build configuration to YAML format

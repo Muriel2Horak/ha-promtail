@@ -2,7 +2,7 @@ name: HA Promtail
 slug: ha_promtail
 description: Promtail for HAOS with journald scraping
 url: https://github.com/Muriel2Horak/ha-promtail
-version: 0.1.5
+version: 0.1.6
 arch:
   - amd64
   - aarch64
@@ -15,10 +15,8 @@ host_network: false
 host_pid: true
 privileged:
   - SYS_ADMIN
-  - SYSLOG
   - DAC_READ_SEARCH
   - SYS_PTRACE
-  - SYS_CHROOT
   - SYS_RESOURCE
   - SYS_TIME
   - SYS_NICE
