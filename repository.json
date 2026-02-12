@@ -1,14 +1,5 @@
 {
   "name": "Muriel HA Add-ons",
   "url": "https://github.com/Muriel2Horak/ha-promtail",
-  "maintainer": "Muriel",
-  "addons": [
-    {
-      "name": "HA Promtail",
-      "slug": "ha_promtail",
-      "url": "https://github.com/Muriel2Horak/ha-promtail",
-      "description": "Promtail for HAOS with journald scraping",
-      "arch": ["amd64","aarch64","armv7","armhf"]
-    }
-  ]
+  "maintainer": "Muriel"
 }
