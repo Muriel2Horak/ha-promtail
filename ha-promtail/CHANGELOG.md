@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2
+- Force repository refresh
+
 ## 0.1.1
 - Fix add-on discovery by bumping version
 
