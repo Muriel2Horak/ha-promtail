@@ -10,6 +10,10 @@ Add this repo to Home Assistant:
 https://github.com/Muriel2Horak/ha-promtail
 ```
 
+## Add-on Location
+
+The add-on is located in `/addon` and uses `config.json` for discovery.
+
 ## Add-on Settings
 
 - Loki URL: `http://10.0.0.160:3100/loki/api/v1/push`
